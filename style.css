@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9fbff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0072ce, #00a9e0);
+  color: white;
+  padding: 30px 0;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Section */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #0072ce;
+  border-left: 5px solid #00a9e0;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* Kỹ năng */
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  background: #e6f4ff;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.skills li:hover {
+  background: #cce9ff;
+  transform: translateX(5px);
+}
+
+/* Liên hệ */
+.contact a {
+  color: #0072ce;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0072ce;
+  color: white;
+  font-size: 0.9rem;
+}
+/* Thanh điều hướng */
+.navbar {
+  background: #005bac;
+  padding: 10px 40px; /* thêm padding để menu không dính sát mép */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* căn phải */
+  gap: 30px;
+}
+
+.navbar a {
+  color: white; /* chữ trắng */
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ffcc00; /* khi hover đổi sang vàng */
+}
+/* Footer cố định dưới màn hình */
+footer {
+  position: fixed;       /* cố định */
+  bottom: 0;             /* sát mép dưới */
+  left: 0;
+  width: 100%;           /* trải ngang toàn màn hình */
+  background: #0072ce;   /* màu nền xanh */
+  color: white;          /* chữ trắng */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
